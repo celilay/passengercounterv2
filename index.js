@@ -8,16 +8,13 @@ let sayac = 0;
 if( gecmisBilgi !== null) {
     saveEl.textContent = localStorage.getItem("gecmisBilgi")
     sayac += parseInt(localStorage.getItem("toplam"))
+    people.textContent = localStorage.getItem("toplam")
+
 } else {
     saveEl.textContent = ""
-}
-
-if( toplam !== null) {
-    people.textContent = localStorage.getItem("toplam")
-} else {
     sayac.textContent = ""
-}
 
+}
 
 
 let countEl = document.getElementById("count-el")
